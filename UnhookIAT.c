@@ -73,7 +73,7 @@ void UnhookIAT() {
 			if(!found)
 			{
 				//Get RVA from DLL loaded in memory
-				for(j=0;j<pImgExpDir->NumberOfFunctions;j++){
+				for(j=0;j<pImgExpDir->NumberOfNames;j++){
 					if(!strcmp(functionName,(char*)BaseDLLAddr+Name[j])){
 						TrueRVA = (PVOID)((LPBYTE)Address[Ordinal[j]]);
 						break;
