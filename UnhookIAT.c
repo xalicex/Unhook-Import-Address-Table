@@ -5,9 +5,6 @@
 #include <dbghelp.h>
 #pragma comment (lib, "dbghelp.lib")
 
-//coded by xalicex
-//Twitter : @AliceCliment
-
 void UnhookIAT() {
 
 	ULONG size;
